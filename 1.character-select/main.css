@@ -1,0 +1,85 @@
+body {
+    height: 100vh;
+    background-image: url("https://windowsforum.kr/files/attach/images/2966154/503/279/013/eb3aa6ed5fb005948adfddd733d9bbae.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container {
+    padding: 50px 0;
+}
+.container .heroes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: orange; */
+    max-width: 700px;
+    margin: 0 auto; /* 중앙정렬, 블록요소여야하고 가로사이즈가 명시되어야한다. */
+    padding: 40px 20px;
+}
+.container .heroes .hero {
+    width: 80px;
+    height: 84px;
+    margin: 4px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    box-sizing: border-box; /* 요소의 크기를 80*84로 고정 */
+    background-color: #555;
+    overflow: hidden;
+    transform: skewX(-14deg);
+    transition: 
+        transform .1s, 
+        background-color .6s;
+}
+.container .heroes .hero:hover {
+    background-color: #ff9c00;
+    transform: skewX(-14deg) scale(1.3);
+    z-index: 1;
+}
+.container .heroes .hero .image {
+    width: 140%;
+    height: 100%;
+    background-position: center; /* 이미지를 정가운데 배치 */
+    background-repeat: no-repeat;
+    background-size: 90px;
+    transform: skewX(14deg) translateX(-16px);
+}
+.container .heroes .hero:nth-child(1) .image {
+    background-image: url("images/turtle1.png");
+}
+.container .heroes .hero:nth-child(2) .image {
+    background-image: url("https://i.namu.wiki/i/GQMqb8jtiqpCo6_US7jmWDO30KfPB2MMvbdURVub61Rs6ALKqbG-nUATj-wNk7bXXWIDjiLHJxWYkTELUgybkA.webp");
+}
+.container .heroes .hero:nth-child(3) .image {
+    background-image: url("images/turtle3.png");
+}
+.container .heroes .hero:nth-child(4) .image {
+    background-image: url("images/turtle4.png");
+}
+.container .heroes .hero:nth-child(5) .image {
+    background-image: url("images/turtle5.png");
+}
+.container .heroes .hero:nth-child(6) .image {
+    background-image: url("images/turtle6.png");
+}
+.container .heroes .hero:nth-child(7) .image {
+    background-image: url("images/turtle7.png");
+}
+.container .heroes .hero:nth-child(8) .image {
+    background-image: url("images/turtle8.png");
+}
+.container .heroes .hero:nth-child(9) .image {
+    background-image: url("images/turtle9.png");
+}
+.container .heroes .hero:nth-child(10) .image {
+    background-image: url("images/turtle10.png");
+}
+
+.container .logo {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.container .logo img {
+    width: 100%;
+}
